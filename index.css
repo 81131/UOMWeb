@@ -1,0 +1,453 @@
+.myVideo {
+  transition-duration: 800ms;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 70%;
+    z-index: -1; /* Ensure the video is behind other content */
+  }
+
+  body{
+    background-color: black;
+  }
+
+  .container {
+    transition-duration: 1000ms;
+    max-width: 95%;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+    z-index: 1; /* Ensure the content is above the video */
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .container h3{
+    text-align: center;
+    
+  }
+  
+  .container:hover{
+    transition-duration: 1000ms;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+
+  }
+
+  .introductionPara{
+    text-align: left;
+    font-size: 1.25rem;
+  }
+
+ol, ul{
+    padding-left: 20px;
+    text-align: left;
+    max-width: 97%;
+    margin: auto;
+}
+
+.photoWithCap{
+    transition-duration: 1000ms;
+    border-radius: 8px;
+    max-width: 85%;
+    margin-top: 1rem;
+}
+
+.photoWithCap:hover{
+    scale: 1.25;
+    border-radius: 12px;
+    transition-duration: 1000ms;
+}
+
+figcaption{
+    font-family: roboto;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+table {
+    border-collapse: separate;
+    border: solid aliceblue 2px;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+td, th {
+    border-left: solid aliceblue 2px;
+    border-bottom: solid aliceblue 2px;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+}
+
+.noBorder{
+    border: none !important;
+}
+
+.noBorder td, .noBorder th, .noBorder tr{
+    border: none !important;
+}
+th {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.downloadBtn, .viewBtn{
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 2rem;
+    transition: 1000ms;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.downloadBtn:hover, .viewBtn:hover{
+    transform: rotatey(30deg);    
+    transition: 1000ms;
+}
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 8px; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+    transition: 500ms;
+
+}
+.card-list .card-item:hover {
+    border: 2px solid #100a0c;
+    border-radius: 12px;
+    transition: 1000ms;
+    scale: 1.025;
+}
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.card-list span {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 1.12rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+#bigO{
+    animation: cardIn 0.2s ease-in 100ms 1 normal both;
+}
+
+#linkedLists{
+    animation: cardIn 0.2s ease-in 200ms 1 normal both;
+}
+
+#binaryTree{
+    animation: cardIn 0.2s ease-in 300ms 1 normal both;
+}
+
+#stacks{
+    animation: cardIn 0.2s ease-in 400ms 1 normal both;
+}
+.card-list .linkedList {
+
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #48e97e;
+}   
+.card-list .binaryTree {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #90c7ff;
+}
+.card-list .bst {
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #e38fdb;
+}
+
+.card-list .downloadBtnIndex {
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #61bdff;
+}
+
+.card-list .stacks {
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #e3df8f;
+}
+.card-item h3 {
+  color: white;
+  font-size: 1.25rem;
+    margin-top: 28px;
+    font-weight: 80;
+}
+
+.readMoreBtn{
+    color: azure;
+    transition: all .35s;
+    margin-left: 65%;
+    cursor: pointer;
+}
+
+.readMoreBtn:hover{
+    transform: rotatey(30deg);
+}
+  
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
+
+@keyframes cardIn {
+    0%{
+        background-color: rgba(255, 255, 255, 0.851); 
+    }
+
+    50%{
+        background-color: rgba(174, 166, 166, 0.8); 
+        border-radius: 2px;
+    }
+
+    100%{
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+    }
+}
+
+
+
+
+.calculator {
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 70%;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 1s, box-shadow 1s, transform 0.5s;
+}
+
+.calculator:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.calculator h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.calculator label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.calculator input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 70%;
+    text-align: center;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.calculator input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    border-color: rgba(43, 189, 27, 0.511);
+    outline: none;
+}
+
+.calculator button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(41, 118, 189, 0.297);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+.calculator button:hover {
+    background-color: rgba(102, 167, 229, 0.341);
+    transform: scale(1.01);
+    border-radius:8px;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#results h4 {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+}
+
+#results p {
+    font-size: 1rem;
+    color: white;
+}
+
+#results ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#results li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure it is always on top */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar List */
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar Items */
+.navbar-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    opacity: 0.6;
+}
+
+.navbar-item:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.navbar-item img.navbar-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Active Section Highlight */
+.navbar-item.active {
+    opacity: 0.9; /* Less transparent */
+    font-weight: bold;
+}
+
+/* Hide Icons on Mobile View */
+@media (max-width: 768px) {
+    .navbar-item img.navbar-icon {
+        display: none;
+    }
+}
+
+
+a{
+    text-decoration: none !important;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    max-width: 928px; /* Optional: limit the max width */
+    aspect-ratio: 16 / 9; /* Maintain the 16:9 aspect ratio */
+    margin: 0 auto; /* Center the video if needed */
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+    border-radius: 8px;
+}

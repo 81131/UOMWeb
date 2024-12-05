@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big O notation</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../fonts.css">
+    <script src="bigONotation.js"></script>
+    <link rel="icon" href="../resources/images/wolf.png" type="image/png">
+
+    <!--Google Font API-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+    
+            <a href="../index.html">
+                <li class="navbar-item active">
+                    <img src="../resources/icons/home.svg" alt="Home Icon" class="navbar-icon">
+                    <span class="roboto-regular">Home</span>
+                </li>
+            </a>
+    
+            <a href="bigONotation.html">
+                <li class="navbar-item">
+                    <img src="../resources/icons/bigO.svg" alt="Section 1 Icon" class="navbar-icon">
+                    <span class="roboto-regular" style="color:chartreuse;">Big O Notation</span>
+                </li>
+            </a>
+    
+            <a href="linkedLists.html">
+                <li class="navbar-item" >
+                    <img src="../resources/icons/linkedLists.svg" alt="Section 2 Icon" class="navbar-icon">
+                    <span class="roboto-regular">Linked Lists</span>
+                </li>
+            </a>
+    
+            <a href="stacks.html">
+                <li class="navbar-item">
+                    <img src="../resources/icons/stacks.svg" alt="Section 3 Icon" class="navbar-icon">
+                    <span class="roboto-regular">Stacks</span>
+                </li>
+            </a>
+    
+            <a href="binaryTree.html">
+                <li class="navbar-item">
+                    <img src="../resources/icons/BT.svg" alt="Section 4 Icon" class="navbar-icon">
+                    <span class="roboto-regular">Binary Trees</span>
+                </li>
+            </a>
+    
+            <a href="download.html">
+                <li class="navbar-item">
+                    <img src="../resources/icons/download.svg" alt="Section 5 Icon" class="navbar-icon">
+                    <span class="roboto-regular">Downloads</span>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <video src="../resources/bgVid/bgVid2.mp4" class="myVideo" muted loop autoplay></video>
+    <div class="container card-item" id="introBigO" style="background-color: rgba(0, 0, 0, 0.5);">
+        <p class="introductionPara roboto-regular">
+            &emsp; The big O notation is a mathematical notation which used to display 
+            the worst-case scenario of an algorithm. There are two types of complexities 
+            we should consider in software development process.
+            <br><br>
+            <ol class="roboto-light" style="font-size: 1.125rem;">
+                <li>Time Complexity</li>
+                <li>Space Complexity</li>
+            </ol>
+            <br>
+        </p>
+        <h3 class="roboto-bold" style="font-weight: 400;">Time Complexity</h3>
+        <p class="introductionPara roboto-regular" style="font-weight: 300; font-size:1.025rem; line-height:1.4rem;">
+            <br>A valid algorithm takes a finite time to execute. 
+            The time require to solve a given problem is known as the time complexity for that problem. 
+            We use the big O notation to display the time complexity of the worst-case scenario.
+            <br><br>
+            There are few types of time complexities, and these are few of them.<br><br>
+            <ul class="roboto-regular" style="font-weight: 300; font-size:1.029rem; line-height:1.4rem;">
+                <li>Constant runtime – <i style="color: lightgray;">O(1)</i></li>
+                <li>Logarithmic runtime – <i style="color: lightgray;">O(log n)</i></li>
+                <li>Linear runtime – <i style="color: lightgray;">O(n)</i></li>
+                <li>Log-Linear runtime – <i style="color: lightgray;">O(n log n)</i></li>
+                <li>Quadratic – <i style="color: lightgray;">O(n²)</i></li>
+                <li>Exponential – <i style="color: lightgray;">O(2ⁿ)</i></li>
+                <li>Worse – <i style="color: lightgray;">O(n!)</i></li>
+            </ul>
+        </p>
+        <figure>
+            <img src="../resources/images/bigOTimeComplexity.jpg" alt="Time Complexity" class="photoWithCap">
+            <figcaption>Source: opengenus.org</figcaption>
+        </figure>
+          <br>
+          <h3 class="roboto-bold" style="font-weight: 400;">Space Complexity</h3> 
+          <p class="introductionPara roboto-regular" style="font-weight: 300; font-size:1.025rem; line-height:1.4rem;"> <br>
+            Just like time complexity, space complexity is an important aspect to consider when evaluating an algorithm. 
+            Space complexity refers to the amount of memory an algorithm needs to run to completion. 
+            It includes both the memory needed for the input data and the memory needed for the algorithm’s operations.
+            <br><br>
+            <ul class="roboto-regular" style="font-weight: 300; font-size:1.029rem; line-height:1.4rem;">
+                <li>Constant space – <i style="color: lightgray;">O(1)</i></li>
+                <li>Logarithmic space – <i style="color: lightgray;">O(log n)</i></li>
+                <li>Linear space – <i style="color: lightgray;">O(n)</i></li>
+                <li>Quadratic space – <i style="color: lightgray;">O(n²)</i></li>
+                <li>Exponential space – <i style="color: lightgray;">O(2ⁿ)</i></li>
+            </ul>    
+          </p>
+            <p class="introductionPara roboto-regular" style="font-weight: 300; font-size:1.025rem; line-height:1.4rem;"> <br>
+                Following calculator can be used to calculate the steps in worst case scenario in Binary search and the linear search. To get more visible results input larger numbers. 
+            </p>
+          <div class="calculator">
+            <h3 class="roboto-bold">Time Complexity Calculator</h3>
+            <form id="complexityForm" onsubmit="return calculateTimeComplexity();">
+                <label for="listLength" class="roboto-regular">Enter the length of the list (n):</label>
+                <input type="number" id="listLength" name="listLength" min="1" required style="text-align: left;" placeholder="Input a large number">
+                <button type="submit" class="roboto-bold">Calculate</button>
+            </form>
+            <div id="results" class="roboto-regular" style="margin-top: 20px; text-align:left;">
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linked Lists</title>
+        <link rel="stylesheet" href="../index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="../fonts.css">
+        <script src="bigONotation.js"></script>
+        <link rel="icon" href="../resources/images/wolf.png" type="image/png">
+    
+        <!--Google Font API-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="navbar-list">
+        
+                <a href="../index.html">
+                    <li class="navbar-item active">
+                        <img src="../resources/icons/home.svg" alt="Home Icon" class="navbar-icon">
+                        <span class="roboto-regular">Home</span>
+                    </li>
+                </a>
+        
+                <a href="bigONotation.html">
+                    <li class="navbar-item">
+                        <img src="../resources/icons/bigO.svg" alt="Section 1 Icon" class="navbar-icon">
+                        <span class="roboto-regular">Big O Notation</span>
+                    </li>
+                </a>
+        
+                <a href="linkedLists.html">
+                    <li class="navbar-item" >
+                        <img src="../resources/icons/linkedLists.svg" alt="Section 2 Icon" class="navbar-icon">
+                        <span class="roboto-regular" style="color:chartreuse;">Linked Lists</span>
+                    </li>
+                </a>
+        
+                <a href="stacks.html">
+                    <li class="navbar-item">
+                        <img src="../resources/icons/stacks.svg" alt="Section 3 Icon" class="navbar-icon">
+                        <span class="roboto-regular">Stacks</span>
+                    </li>
+                </a>
+        
+                <a href="binaryTree.html">
+                    <li class="navbar-item">
+                        <img src="../resources/icons/BT.svg" alt="Section 4 Icon" class="navbar-icon">
+                        <span class="roboto-regular">Binary Trees</span>
+                    </li>
+                </a>
+        
+                <a href="download.html">
+                    <li class="navbar-item">
+                        <img src="../resources/icons/download.svg" alt="Section 5 Icon" class="navbar-icon">
+                        <span class="roboto-regular">Downloads</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <video src="../resources/bgVid/bgVid2.mp4" class="myVideo" muted loop autoplay></video>
+
+<body>
+    <div class="container card-item" id="introBigO" style="background-color: rgba(0, 0, 0, 0.5);">
+        <p class="introductionPara roboto-regular">
+            &emsp; 	The linked lists are used to avoid inefficiencies in insertion operation in arrays. Here is a comparison between arrays and linked lists.
+            <br><br>
+            <table class="roboto-regular" style="border-radius: 8px; margin:auto;">
+                <tr>
+                    <th style="text-align:center; ">🔮</th>
+                    <th>Arrays</th>
+                    <th>Linked Lists</th>
+                </tr>
+                <tr>
+                    <th>Data Structure</th>
+                    <td>Contiguous</td>
+                    <td>Non-contiguous</td>
+                </tr>
+                <tr>
+                    <th>Memory Allocation (Typically)</th>
+                    <td>To the whole array</td>
+                    <td>One by one to individual element</td>
+                </tr>
+                <tr>
+                    <th>Insertion/ Deletion</th>
+                    <td>Inefficient</td>
+                    <td>Efficient</td>
+                </tr>
+                <tr>
+                    <th style="border-bottom:none">Access</th>
+                    <td style="border-bottom:none">Random</td>
+                    <td style="border-bottom:none">Sequential</td>
+                </tr>               
+            </table>
+        </p>
+        <br>
+        <p class="introductionPara roboto-regular" style="font-weight: 300; font-size:1.025rem; line-height:1.4rem;">
+            <br>
+            There are several types of linked lists, and we will see the structure of three of them.            <br><br>
+            <ol class="roboto-regular" style="font-weight: 300; font-size:1.029rem; line-height:1.4rem;">
+                <li>Singly Linked Lists</li>
+                <figure style="text-align: center;">
+                    <img src="../resources/images/singlyLinkedList.jpg" alt="Time Complexity" class="photoWithCap">
+                    <figcaption style="text-align: center;">Source: GeeksForGeeks</figcaption>
+                </figure>
+                <li>Doubly Linked Lists</li>
+                <figure style="text-align: center;">
+                    <img src="../resources/images/doublyLinkedList.jpg" alt="Time Complexity" class="photoWithCap" >
+                    <figcaption style="text-align: center;">Source: GeeksForGeeks</figcaption>
+                </figure>
+                <li>Circular Linked Lists</li>
+                <figure style="text-align: center;">
+                    <img src="../resources/images/circularLinkedLists.jpg" alt="Time Complexity" class="photoWithCap" >
+                    <figcaption style="text-align: center;">Source: GeeksForGeeks</figcaption>
+                </figure>
+
+            </ul>
+        </p>
+        <figure>
+
+          <br>
+          <!-- <h3 class="roboto-bold" style="font-weight: 400; text-align:left;">Downloads</h3> 
+          <p class="introductionPara roboto-regular" style="font-weight: 300; font-size:1.025rem; line-height:1.4rem;"> <br>
+           In this section you can download the <b>Python</b> codes for the above mentioned data structure types.
+            <br><br>
+            <table class="roboto-regular noBorder">
+
+                <tr>
+                    <td>Singly Linked Lists</td>
+                    <td><a href="downloads\codeFilesLinkedLists\singlyLinkedList.py" download><button class="downloadBtn">Downolad</button></a></td>
+                    <td><a href="downloads\codeFilesLinkedLists\singlyLinkedList.py" target="_blank" ><button class="viewBtn">View</button></a></td>
+                </tr>
+                <tr>
+                    <td>Doubly Linked Lists</td>
+                    <td><button class="downloadBtn">Downolad</button></td>
+                    <td><button class="viewBtn">View</button></td>
+                </tr>
+                <tr>
+                    <td>Circular Linked Lists</td>
+                    <td><button class="downloadBtn">Downolad</button></td>
+                    <td><button class="viewBtn">View</button></td>
+                </tr>
+            </table>
+          </p> -->
+
+    </div>
+
+</body>
+</html>
